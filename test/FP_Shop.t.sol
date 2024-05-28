@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/FP_Shop.sol";
+import "../src/iebs_Faillapop_shop.sol";
 import "../src/interfaces/IFP_DAO.sol";
 import "../src/interfaces/IFP_Vault.sol";
 
