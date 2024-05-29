@@ -40,8 +40,8 @@ contract FP_DAOTest is Test {
         tokenMock.transfer(user, 100);
         vm.prank(user);
         fpDao.castVote(0, true);
-        
-        (,, uint votesFor, uint votesAgainst,) = fpDao.query_dispute(0);
+
+        (,, uint256 votesFor, uint256 votesAgainst,) = fpDao.query_dispute(0);
         assertEq(votesFor, 100);
         assertEq(votesAgainst, 0);
     }
